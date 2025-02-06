@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Choose a Date</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/wTDG30TB/yes.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <input type="date" id="datePicker" class="btn" />
+      <button class="btn" onclick="submitDate()">Submit</button>
+    </div>
+
+    <script>
+      function submitDate() {
+        const date = document.getElementById("datePicker").value;
+        if (date) {
+          window.location.href = "thankyou.html";
+        } else {
+          alert("Please select a date!");
+        }
+      }
+    </script>
+  </body>
+</html>
